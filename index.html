@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Marcos E. da Silva</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Personal page of Marcos E. da Silva for the WDD 131 course at BYU-Idaho, featuring HTML, CSS, JavaScript, and dynamic web development fundamentals.">
+  <meta name="author" content="Marcos E. da Silva">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/marcosedasilva/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/w-of-m/1?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Marcos E. da Silva</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="card-content">
+        <img src="images/profile.jpeg" alt="Marcos E. da Silva's avatar" width="150" height="150" class="avatar">
+        <p>
+          My name is Marcos E. da Silva. I'm a student in the WDD 131 course at
+          BYU-Idaho (PathwayConnect) and I work professionally with data and
+          information technology. I'm learning the fundamentals of dynamic
+          web development, including HTML, CSS, and JavaScript, and I enjoy
+          applying that knowledge to practical everyday projects.
+        </p>
+      </div>
+      <hr>
+      <div class="fact-block">
+        <img src="images/code-icon.svg" alt="Code icon representing web development" width="90" height="90">
+        <p>
+          This site was built entirely with plain HTML, CSS, and JavaScript
+          (no frameworks), as part of the exercises for the WDD 131 course
+          on dynamic web development fundamentals.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul class="resource-list">
+        <li><a href="https://pandoc.org/app/" target="_blank" rel="noopener">Pandoc App</a></li>
+        <li><a href="https://www.5devs.com.br/" target="_blank" rel="noopener">5devs</a></li>
+        <li><a href="https://jsonlint.com/" target="_blank" rel="noopener">JSONLint</a></li>
+        <li><a href="https://bcrypt-generator.com/" target="_blank" rel="noopener">Bcrypt Generator</a></li>
+        <li><a href="https://www.lipsum.com/" target="_blank" rel="noopener">Lorem Ipsum Generator</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Marcos E. da Silva &middot; Florianópolis, Santa Catarina</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

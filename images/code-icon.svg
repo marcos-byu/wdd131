@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="codeIconTitle">
+  <title id="codeIconTitle">Code icon representing web development</title>
+  <rect x="4" y="4" width="112" height="112" rx="14" fill="#173f3f"/>
+  <text x="60" y="72" text-anchor="middle" font-family="'Fira Code', 'Courier New', monospace" font-size="34" fill="#e6c26e">&lt;/&gt;</text>
+</svg>
