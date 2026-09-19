@@ -1,0 +1,149 @@
+/* ===== Reset & base (mobile-first) ===== */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #173f3f;
+  --color-secondary: #2d6a6a;
+  --color-accent: #e6c26e;
+  --color-bg: #f7f5f0;
+  --color-card-bg: #ffffff;
+  --color-text: #2b2b2b;
+  --font-heading: "Poppins", Arial, sans-serif;
+  --font-body: "Inter", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.5;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.hamburger {
+  background: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  order: 3;
+}
+
+.nav-menu {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  gap: 0.25rem;
+}
+
+.nav-menu.open {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+/* ===== Main ===== */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main > h1 {
+  text-align: center;
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure {
+  margin: 0;
+  background-color: var(--color-card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+figcaption {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  color: var(--color-accent);
+}

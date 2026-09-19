@@ -1,0 +1,27 @@
+/* ===== Larger viewport overrides ===== */
+@media (min-width: 700px) {
+  header {
+    flex-wrap: nowrap;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    order: 0;
+    width: auto;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

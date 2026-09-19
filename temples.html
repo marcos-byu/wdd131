@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album – WDD 131 – Marcos E. da Silva</title>
+  <meta name="description" content="A responsive picture album of temples built for WDD 131, featuring a mobile hamburger menu and CSS Grid layout.">
+  <meta name="author" content="Marcos E. da Silva">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-title">Temple Album</p>
+    <button class="hamburger" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav>
+      <ul id="primary-nav" class="nav-menu">
+        <li><a href="temples.html">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Favorite Temples</h1>
+    <div class="gallery">
+      <figure>
+        <img src="images/brasilia_brazil_temple_exterior.jpg" alt="Brasília Brazil Temple" width="400" height="300" loading="lazy">
+        <figcaption>Brasília Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/porto_alegre_brazil_temple_lds.jpg" alt="Porto Alegre Brazil Temple" width="400" height="300" loading="lazy">
+        <figcaption>Porto Alegre Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/curitiba_brazil_temple_lds.jpg" alt="Curitiba Brazil Temple" width="400" height="300" loading="lazy">
+        <figcaption>Curitiba Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/buenos_aires_argentina_temple.jpg" alt="Buenos Aires Argentina Temple" width="400" height="300" loading="lazy">
+        <figcaption>Buenos Aires Argentina Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/mesa_temple.jpg" alt="Mesa Arizona Temple" width="400" height="300" loading="lazy">
+        <figcaption>Mesa Arizona Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/logan_temple_lds.jpg" alt="Logan Utah Temple" width="400" height="300" loading="lazy">
+        <figcaption>Logan Utah Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/kirtland_temple.jpg" alt="Kirtland Temple" width="400" height="300" loading="lazy">
+        <figcaption>Kirtland Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/provo_city_center_temple_exterior.jpg" alt="Provo City Center Temple" width="400" height="300" loading="lazy">
+        <figcaption>Provo City Center Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/washington_dc_mormon_temple.jpg" alt="Washington D.C. Temple" width="400" height="300" loading="lazy">
+        <figcaption>Washington D.C. Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Marcos E. da Silva &middot; Santa Catarina, Brasil 🇧🇷</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
