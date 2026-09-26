@@ -1,0 +1,46 @@
+@media (min-width: 700px) {
+  header h1 {
+    font-size: 2.6rem;
+  }
+
+  .card {
+    position: absolute;
+    background-color: var(--color-card-overlay);
+    margin: 0;
+    max-width: 280px;
+    padding: 1.1rem 1.25rem;
+  }
+
+  .card h2 {
+    margin-bottom: 0.6rem;
+  }
+
+  .info-list {
+    row-gap: 0.3rem;
+    font-size: 0.95rem;
+  }
+
+  .data-card {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .weather-card {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .info-list {
+    justify-content: start;
+  }
+
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  .weather-card h2::after {
+    content: "\26C5";
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+  }
+}

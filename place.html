@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micronesia – WDD 131 – Marcos E. da Silva</title>
+  <meta name="description" content="A responsive country profile page for the Federated States of Micronesia, built for WDD 131 with a srcset hero image and a JavaScript wind chill calculation.">
+  <meta name="author" content="Marcos E. da Silva">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Micronesia</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source media="(min-width: 700px)" srcset="images/micronesia-hero-large.webp">
+        <img src="images/micronesia-hero-small.webp" alt="Small palm-covered island in Chuuk Lagoon, Federated States of Micronesia" width="800" height="1000" loading="eager">
+      </picture>
+
+      <section class="card data-card">
+        <h2>Data</h2>
+        <dl class="info-list">
+          <dt>Area:</dt>
+          <dd>702 sq km</dd>
+          <dt>Population:</dt>
+          <dd>105,700</dd>
+          <dt>Capital:</dt>
+          <dd>Palikir</dd>
+          <dt>Languages:</dt>
+          <dd>English, Chuukese, Pohnpeian</dd>
+          <dt>Currency:</dt>
+          <dd>US Dollar</dd>
+          <dt>Time Zone:</dt>
+          <dd>UTC+10 / UTC+11</dd>
+          <dt>Calling Code:</dt>
+          <dd>+691</dd>
+          <dt>Internet TLD:</dt>
+          <dd>.fm</dd>
+        </dl>
+      </section>
+
+      <section class="card weather-card">
+        <h2>Weather</h2>
+        <img src="images/weather-icon.svg" alt="Partly cloudy weather icon" class="weather-icon-mobile" width="60" height="60">
+        <dl class="info-list">
+          <dt>Temperature:</dt>
+          <dd>29 &deg;C</dd>
+          <dt>Conditions:</dt>
+          <dd>Partly Cloudy</dd>
+          <dt>Wind:</dt>
+          <dd>12 km/h</dd>
+          <dt>Wind Chill:</dt>
+          <dd id="windchill"></dd>
+        </dl>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Marcos E. da Silva &middot; Micronesia</p>
+    <p id="lastModified"></p>
+    <p class="credit">Hero photo by <a href="https://unsplash.com/@marekokon">Marek Okon</a> on <a href="https://unsplash.com/photos/WScpndZFrOM">Unsplash</a></p>
+  </footer>
+</body>
+</html>
