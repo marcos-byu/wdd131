@@ -171,3 +171,19 @@ footer {
 footer p {
   margin: 0.25rem 0;
 }
+
+@media (min-width: 700px) {
+  main {
+    margin: 2.5rem auto;
+  }
+
+  form,
+  .confirmation {
+    padding: 2rem 2.5rem;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
