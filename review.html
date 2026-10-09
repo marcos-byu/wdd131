@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation – WDD 131 – Marcos E. da Silva</title>
+  <meta name="description" content="Confirmation page for the WDD 131 product review form with a counter of completed reviews.">
+  <meta name="author" content="Marcos E. da Silva">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Thank You!</h1>
+  </header>
+
+  <main>
+    <div class="confirmation">
+      <p>Your product review was submitted successfully.</p>
+      <p>Reviews completed: <span id="reviewCount">0</span></p>
+      <a href="form.html">Write another review</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Marcos E. da Silva &middot; Santa Catarina, Brasil 🇧🇷</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
